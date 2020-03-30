@@ -1,6 +1,6 @@
 # GameAI
 
-##KBAStar
+## KBAStar
 
 ### Notes
 
@@ -15,7 +15,7 @@
 
 This package uses the AStar code which is from the original GVGAI framework tool.pathfinder. 
 
-####Remark of the positions to calculating AStar distance here:
+#### Remark of the positions to calculating AStar distance here:
 
 The original package tool.pathfinder uses Grid Position (GP) to calculate the AStar distance between two sprites, whereas SingleTreeNode.java of the original GVGAI tracks.singlePlayer.advanced.sampleMCTS uses Screen Position (SP) while passing the position of the sprites. Therefore the SP has been processed as GP in KBAStar. (Note that $GP  = SP/block\_size$ (Variable $block\_size$ can be found in core.game.Game.java, core.game.BasicGame.java, and core.game.StateObservation.java (where it is called from in this KBAStar package). It is defined as the size of one block in the game window. It is actually the $square\_size$ defined in every game description file.) )
 
